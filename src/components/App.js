@@ -18,7 +18,7 @@ function App() {
   }
 
   function handleDelete(deletedItem){
-    const updatedQuestions = questions.filter((question) => question.id != deletedItem.id);
+    const updatedQuestions = questions.filter((question) => question.id !== deletedItem);
     setQuestions(updatedQuestions);
   }
 
